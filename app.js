@@ -20,6 +20,7 @@ const ItemSchema = new mongoose.Schema({
     email: { type: String },
     phnumber: { type: Number, required: true, unique: true },
     business: { type: String, required: true },
+    category: { type: String, required: true },
     stall: { type: Number, enum: [1, 2, 3], default: 1 }
 }, { timestamps: true });
 
